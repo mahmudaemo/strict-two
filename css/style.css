@@ -1,0 +1,311 @@
+/* font-family: 'Lato', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+    padding: 0;
+}
+header{
+
+background: #f9f9f9;
+
+padding: 20px 0;
+}
+.header_wrapper{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+.logo{
+    width: 20%;
+}
+.logo img{
+
+}
+nav{
+width: 50%
+}
+nav ul{
+
+list-style: none;
+
+display: flex;
+
+justify-content: end;
+}
+nav ul li{
+
+margin-left: 30px;
+}
+nav ul li a{
+    
+text-decoration: none;
+font-family: 'Lato', sans-serif;
+font-weight: 500;   
+text-transform: uppercase;
+    
+color: #2d3980;
+}
+.banner{
+background-image: url(../images/banner.png);
+min-height: 95vh;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+.banner_content{
+
+width: 38%;
+
+text-align: center;
+}
+.banner_content h1{
+
+color: #ffff;
+
+font-size: 100px;
+
+text-transform: uppercase;
+
+margin-bottom: 20px;
+
+font-family: 'Lato', sans-serif;
+
+font-weight: 500;
+}
+.banner_content span{
+
+display: block;
+
+background: #15a4fa;
+
+height: 2px;
+
+width: 100%;
+
+}
+.banner_content p{
+
+color: #ffff;
+font-size: 18px;
+font-family: 'Lato', sans-serif;
+
+margin: 30px 0 40px 0;
+}
+.banner_content button{
+
+background-color: transparent;
+
+border: none;
+
+border: 1px solid #15a4fa;
+
+padding: 10px 20px;
+font-family: 'Lato', sans-serif;
+border-radius: 5px;
+transition: .4s ;
+color: #fff;
+cursor: pointer;
+}
+.banner_content button:hover{
+background-color: #15a4fa;
+color: #fff;
+}
+
+.icon{
+position: absolute;
+bottom: -2px;
+color: #fff;
+left: 50%;
+transform: translate(-50%, 0);
+font-size: 20px;
+animation: updown 1s linear infinite;
+animation-direction: alternate;
+}
+
+@keyframes updown {
+    0%{
+        bottom: 30px;
+    }
+    100%{
+        bottom: 2px;
+    }
+    
+}
+.simple_design{
+
+background: #ededed;
+
+padding: 50px 0;
+}
+.simple{
+
+width: 80%;
+
+margin: auto;
+
+text-align: center;
+}
+.simple h2{
+
+color: #2d3950;
+
+font-size: 35px;
+
+font-family: 'Lato', sans-serif;
+}
+.simple p{
+
+color: #999999;
+
+font-family: 'Lato', sans-serif;
+
+margin-top: 15px;
+}
+.font{
+
+margin: auto;
+
+padding: 50px 0;
+
+width: 80%;
+
+display: flex;
+justify-content: space-between;
+}
+.font_part{
+
+width: 30%;
+text-align: center;
+
+}
+.font_content{
+
+font-size: 35px;
+
+align-items: center;
+
+width: 80px;
+
+height: 80px;
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+1,48baff+50,5fc3ff+50,5fc3ff+100 */
+background: #48baff; /* Old browsers */
+background: -moz-linear-gradient(left,  #48baff 1%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #48baff 1%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #48baff 1%,#48baff 50%,#5fc3ff 50%,#5fc3ff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48baff', endColorstr='#5fc3ff',GradientType=1 ); /* IE6-9 */
+
+
+display: flex;
+
+justify-content: center;
+
+color: #fff;
+
+margin: auto;
+}
+.font_part h3{
+color: #2d3950;
+margin: 15px 0 10px 0;
+font-family: 'Lato', sans-serif; 
+}
+.font_part p{
+    font-family: 'Lato', sans-serif; 
+    color: #999999;   
+}
+.gallery_section{
+
+background: #f6f9f9;
+
+padding: 100px 0;
+}
+.gallery_content{
+
+width: 80%;
+
+margin: auto;
+}
+.gallery_heading{
+
+text-align: center;
+
+margin-bottom: 50px;
+}
+.gallery_heading h2{
+
+color: #2d3950;
+
+font-family: 'Lato', sans-serif;
+}
+.gallery_heading p{
+
+margin: 10px 0;
+
+color: #909090;
+
+font-family: 'Lato', sans-serif;
+}
+.gallary{
+ display: flex;
+}
+.gallary_item{
+width: 30%;
+
+}
+.gallery_image{
+    width: 100%;
+    position: relative;
+}
+.gallery_image img{
+    width: 100%;
+}
+.gallery_image ul{
+    
+list-style: none;
+    
+display: flex;
+    
+position: absolute;
+    
+left: 50%;
+    
+top: 55%;
+    
+transform: translate(-50%, -50%);
+opacity: 0;
+transition: .4s all ease-in-out;
+}
+.gallery_image ul li{
+    
+border: 1px solid #fff;
+    
+height: 30px;
+    
+width: 30px;
+    
+display: flex;
+    
+justify-content: center;
+    
+align-items: center;
+    
+margin: 2px;
+    
+border-radius: 3px;
+}
+.gallery_image ul li a{
+    
+color: #fff;
+}
+.gallery_image:hover ul{
+    opacity: 1;
+    top: 50%;
+}
